@@ -28,7 +28,7 @@ function [x, iterations] = calcImportanceVector(L)
     while normComparison > 1e-15
         iterations = iterations + 1;
         x = L*x;
-        disp(iterations); disp(x);
+        % disp(iterations); disp(x);
         normComparison = norm(L*x-x, 2);
     end
 end

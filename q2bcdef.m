@@ -127,6 +127,9 @@ printPageRankResults(A,alpha,u);
 alpha = -1; u = -1; % input any alpha and u for this part doesnt matter
 printPageRankResults(B,alpha,u);
 
+% takes in C, u, alpha as input arguments and prints their order
+% this function only print u, alpha without using it otherwise so
+% to print B,A, set C to B,A and let u,alpha be any arbitray number/matrix.
 function printPageRankResults(C,alpha,u)
     fprintf('At alpha = %d and u = \n', alpha); disp(u.');
     disp("C(u,a)="); disp(C);
@@ -144,5 +147,4 @@ function printPageRankResults(C,alpha,u)
     end
     fprintf("\n");
 end
-
 
