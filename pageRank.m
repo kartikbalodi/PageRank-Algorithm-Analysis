@@ -24,7 +24,7 @@ function [x, iterations] = calcImportanceVector(L)
     x = x0;
     normComparison = norm(L*x-x, 2);
     iterations = 0;
-    % repeat steps till norm of Ax=x to 1e-10 closeness based on norm
+    % repeat steps till norm of Ax=x to 1e-15 closeness based on norm
     while normComparison > 1e-15
         iterations = iterations + 1;
         x = L*x;
